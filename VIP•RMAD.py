@@ -61,7 +61,7 @@ print(f'''\033[2;34m━━━━━━━━━━━━━━━━━━━━
 
 \033[2;35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━''')
 print('\n')
-token=input(' TOKEN  •'+B
+token=input(' TOKEN  •'+B) 
 print('\n')
 ID=input(' ID •'+B) 
 cetak(nel('\t• Sedang Menginstall Modul Requests •'))
