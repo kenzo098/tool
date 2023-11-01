@@ -61,9 +61,9 @@ print(f'''\033[2;34m━━━━━━━━━━━━━━━━━━━━
 
 \033[2;35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━''')
 print('\n')
-token=('6511306440:AAFTa1lJb1XDaEiAHfkKB62B_fWz-NM_TsU')
+token=input(' TOKEN  •'+B
 print('\n')
-ID=('5580097435')
+ID=input(' ID •'+B) 
 cetak(nel('\t• Sedang Menginstall Modul Requests •'))
 pretty.install()
 CON=sol()
