@@ -32,11 +32,11 @@ t=(mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
 
 hours = (now.hour)
 x = datetime.datetime.now()
-g= datetime.datetime(2023,11  ,5 , 0, 00 ,0)
+g= datetime.datetime(2023,11  ,6 , 0, 00 ,0)
 
 if (x.strftime("%x"))>(g.strftime("%x")):
  print('\n\n')
- print("     "+' انتهئ التفعيل راسل المطور للحصول ع احدث نسخه@XD_0O' )
+ print("     "+' انتهئ التفعيل راسل المطور للحصول ع احدث نسخه@K_N_Z_O' )
  print('\n\n')
  print(x)
  
