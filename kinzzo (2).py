@@ -1,5 +1,9 @@
 #pylint:disable=E0001
 
+import datetime;now = datetime.date.today();target = datetime.date(2026, 6, 26)
+if now >=target:exit("وقفت")
+else:print("شغالة")
+
 import requests,bs4,json,os,sys,random,datetime,time,re
 import threading
 import urllib3,rich,base64
@@ -19,10 +23,6 @@ from rich import pretty
 from rich.text import Text as tekz
 import os
 from termcolor import colored
-
-import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
-if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
-else:print("")
 
 try:
  import requests
