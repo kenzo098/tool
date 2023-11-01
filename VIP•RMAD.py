@@ -1,5 +1,5 @@
-import datetime;now = datetime.date.today();target = datetime.date(2023, 11, 5)
-if now >=target:exit("تـوقفت الاداة انتظر التحديث")
+import datetime;now = datetime.date.today();target = datetime.date(2022, 11, 5)
+if now >=target:exit("تـوقفت الاداة الاشتراك في النسخه المدفوعه @K_N_Z_O")
 else:print("\033[1;33m @K_N_Z_O ")
 import os
 import sys
