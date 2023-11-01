@@ -19,7 +19,7 @@ from rich import pretty
 from rich.text import Text as tekz
 import os
 
-import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
+import datetime;now = datetime.date.today();target = datetime.date(2023, 9, 26)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
 else:print("")
 
