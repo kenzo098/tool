@@ -19,44 +19,9 @@ from rich import pretty
 from rich.text import Text as tekz
 import os
 
-now = datetime.datetime.today()
-mm = str(now.month)
-dd = str(now.day)
-yyyy = str(now.year)
-hour = str(now.hour)
-mi = str(now.minute)
-ss = str(now.second)
-
-t=(mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
-
-
-hours = (now.hour)
-x = datetime.datetime.now()
-g= datetime.datetime(2023,11  ,6 , 0, 00 ,0)
-
-if (x.strftime("%x"))>(g.strftime("%x")):
- print('\n\n')
- print("     "+' انتهئ التفعيل راسل المطور للحصول ع احدث نسخه@K_N_Z_O' )
- print('\n\n')
- print(x)
- 
- sys.exit(0)
- 
-
-if (x.strftime("%x"))==(g.strftime("%x")):
-   print('')
-   if(x.strftime("%X"))>(g.strftime("%X")):
-    print('\n\n')
-    print("     "+'' )
-    print('\n\n')
-    print(x)
-    
-    sys.exit(0)
-   else:
-    print('')  
-else:
-    print('')
-print('')
+import datetime;now = datetime.date.today();target = datetime.date(2023, 11, 26)
+if now >=target:exit("راسل المطور الاشتراك @K_N_Z_O")
+else:print("")
 
 try:
  import requests
