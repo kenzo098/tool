@@ -1,6 +1,6 @@
 #pylint:disable=E0001
 
-import datetime;now = datetime.date.today();target = datetime.date(2026, 6, 26)
+import datetime;now = datetime.date.today();target = datetime.date(2022, 6, 26)
 if now >=target:exit("وقفت")
 else:print("شغالة")
 
