@@ -317,7 +317,7 @@ class Login:
         	def back():
         		llogin()
         	def banner():
-        		print(f'''⋘RAJY⋙''')
+        		print(f'''⋘KENZO⋙''')
         exit()        
         ykh = input(f"{H}[{M}+{H}]{N} HINI ")
         if ykh in ["", " "]:
@@ -532,7 +532,7 @@ class Login:
             else:
                 if "api" in xx:
                     print("""---------------
-⋘─────━RAJY━─────⋙
+⋘─────━KENZO━─────⋙
 ------------------""")
                     prog = Progress(TextColumn('{task.description}'))
                     des = prog.add_task('', total=len(self.id))
@@ -543,7 +543,7 @@ class Login:
                         exit("\n\ncracking done!")
                 elif "acy" in xx:
                     print("""--------------
-⋘─────━RAJY━─────⋙
+⋘─────━KENZO━─────⋙
 ---------------""")
                     prog = Progress(TextColumn('{task.description}'))
                     des = prog.add_task('', total=len(self.id))
@@ -554,7 +554,7 @@ class Login:
                         exit("\n\ncracking done!")
                 elif "dat" in xx:
                     print("""-------------
-⋘─────━RAJY━─────⋙
+⋘─────━KENZO━─────⋙
 -----------------""")
                     prog = Progress(TextColumn('{task.description}'))
                     des = prog.add_task('', total=len(self.id))
@@ -572,7 +572,7 @@ def clear():
 def back():
 	llogin()
 def banner():
-	print(f'''⋘RAJY⋙''')
+	print(f'''⋘KENZO⋙''')
 def llogin():
 	try:
 		token = open('.token.txt','r').read()
