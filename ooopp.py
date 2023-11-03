@@ -27,6 +27,8 @@ from time import sleep
 from rich.console import Console
 from rich.progress import Progress
 
+os.system('pip install termcolor')
+
 console = Console()
 
 with Progress(console=console, transient=True) as progress:
