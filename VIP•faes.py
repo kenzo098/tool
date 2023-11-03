@@ -1,4 +1,4 @@
-
+غ
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 import threading
@@ -37,7 +37,7 @@ with Progress(console=console, transient=True) as progress:
         sleep(1)
 
 
-import datetime;now = datetime.date.today();target = datetime.date(2023, 11, 4)
+import datetime;now = datetime.date.today();target = datetime.date(2023, 8, 4)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
 
 try:
