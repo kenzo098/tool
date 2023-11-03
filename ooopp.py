@@ -106,9 +106,9 @@ print("""\033[2;35m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿�
 
    @K_N_Z_O""")
 print('\n')
-token=('6147171859:AAEmVtmT_b140daTGucUtFeFdj758xeN3hY')
+token=input(f'{Y} [{Y}+{Y}] {B}TOKEN • تـوڪـن ➪  ' + F)
 print('\n')
-ID=('1684266609')
+ID=input(f'{Y} [{Y}+{Y}] {B}ID • ايــدي ➪ ' + F)
 pretty.install()
 CON=sol()
 ugen2=[]
