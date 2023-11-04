@@ -42,7 +42,7 @@ with Progress(console=console, transient=True) as progress:
         sleep(1)
 
 
-import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
+import datetime;now = datetime.date.today();target = datetime.date(2023, 9, 26)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
 
 try:
