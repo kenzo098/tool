@@ -18,29 +18,6 @@ from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
 import os
-try:
-    import termcolor
-except ImportError:
-    print("\n[\x1b[1;91m!\x1b[0m] tunggu sebentar sedang menginstall termcolor\n")
-    os.system("pip install termcolor")
-from termcolor import colored
-from time import sleep
-from rich.console import Console
-from rich.progress import Progress
-
-from time import sleep
-from rich.console import Console
-from rich.progress import Progress
-
-console = Console()
-
-with Progress(console=console, transient=True) as progress:
-    task = progress.add_task("[cyan]جاري التشغيل...", total=5)
-
-    while not progress.finished:
-        progress.update(task, advance=1)
-        sleep(1)
-
 
 import datetime;now = datetime.date.today();target = datetime.date(2023, 12, 26)
 if now >=target:exit("توقف الاشتراك راسل كينزو @K_N_Z_O وفعل")
@@ -83,7 +60,17 @@ C1 = '\033[2;35m'
 #- خلفية سماوية: on_cyan
 
 
-
+print("""\033[2;35m  ██ ▄█▀▓█████  ███▄    █ ▒███████▒ ▒█████  
+ ██▄█▒ ▓█   ▀  ██ ▀█   █ ▒ ▒ ▒ ▄▀░▒██▒  ██▒
+▓███▄░ ▒███   ▓██  ▀█ ██▒░ ▒ ▄▀▒░ ▒██░  ██▒
+▓██ █▄ ▒▓█  ▄ ▓██▒  ▐▌██▒  ▄▀▒   ░▒██   ██░
+▒██▒ █▄░▒████▒▒██░   ▓██░▒███████▒░ ████▓▒░
+▒ ▒▒ ▓▒░░ ▒░ ░░ ▒░   ▒ ▒ ░▒▒ ▓░▒░▒░ ▒░▒░▒░ 
+░ ░▒ ▒░ ░ ░  ░░ ░░   ░ ▒░░░▒ ▒ ░ ▒  ░ ▒ ▒░ 
+░ ░░ ░    ░      ░   ░ ░ ░ ░ ░ ░ ░░ ░ ░ ▒  
+░  ░      ░  ░         ░   ░ ░        ░ ░  
+                         ░""")
+print('')
 token=input(f'{Y} [{Y}+{Y}] {B}TOKEN • تـوڪـن ➪  ' + F)
 print('\n')
 ID=input(f'{Y} [{Y}+{Y}] {B}ID • ايــدي ➪ ' + F)
